@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebRTC Call</title>
+    <title>WebRTC Multi-User Call</title>
+    <style>
+        video {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>WebRTC Call with Signaling Server</h1>
+    <h1>Multi-User WebRTC Call</h1>
     <div>
-        <button id="start-button">Start</button>
-        <button id="call-button" disabled>Call</button>
-        <button id="hangup-button" disabled>Hang Up</button>
+        <button class="start-button">Start</button>
+        <button class="hangup-button" disabled>Hang Up</button>
     </div>
-    <video id="local-video" autoplay muted></video>
-    <video id="remote-video" autoplay></video>
+    <div class="videos-container">
+        <video class="local-video" autoplay muted></video>
+    </div>
     <script src='./script.js'>
     	
     </script>
